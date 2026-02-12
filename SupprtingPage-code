@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey | Shepherd's Table Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--Here below It’s what allows people to click "Home", "About", or "Reserve" to move around your site.-->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="other/sheep.webp" alt="Cafe Logo" width="50">
+                <span class="site-title">Shepherd's Table CAFE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="LandingPage-code">Home</a></li>
+                <li><a href="SupprtingPage-code">About</a></li>
+                <li><a href="FormSection-code">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+          <!-- in this sectiob Ai/gemini assited on confirmg and on making evrithing go indented (where they all should be align) in this hole form-->
+        <section class="about-hero">
+            <div class="hero-overlay-content">
+                <h1>Our Story & Mission</h1>
+                <p>A journey of faith, flavor, and fellowship.</p>
+            </div>
+        </section>
+
+        <section class="story-intro">
+            <div class="container">
+                <h2>~ Born from a Dream ~</h2>
+                <div class="story-text-box">
+                    <p>The Shepherd's Table Cafe was born from a simple prayer and a profound calling. In 2020, our founder, Sarah Mitchell, felt called to create a space where the neighborhood could gather not just for food, but for fellowship and faith.</p>
+                    <p>What started as a small community kitchen quickly blossomed into a full cafe and gathering space. Partnering with local farmers—including the Henderson family's sheep farm just outside town—we committed to serving meals that honor both the land and the hands that tend it.</p>
+                    <p>Today, The Shepherd's Table is more than a restaurant. It's a home where young professionals find peace after long workdays, where families create memories over Sunday brunch, and where the elderly find companionship and warmth.</p>
+                    <blockquote class="founder-quote">
+                        "We set the table, God fills the hearts. That's the miracle we witness every single day." <br> 
+                        <span>— Sarah Mitchell</span>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <!--This section is a Split-Layout Section. It’s used to tell the story by putting a meaningful image on one side and a list of your values on the other.-->
+        <section class="guides-section">
+            <div class="guide-container">
+                <div class="guide-image">
+                    <img src="images/sheep and lambs-img.webp" alt="Sheep in the Meadow">
+                </div>
+                <div class="guide-text">
+                    <h2>What Guides Us</h2>
+                    <ul class="guide-list">
+                        <li><strong>Scripture-Based:</strong> Biblical hospitality is at the heart of everything we do.</li>
+                        <li><strong>Inclusive:</strong> All are welcome at our table, just as Christ welcomes us.</li>
+                        <li><strong>Intentional:</strong> Every detail is thoughtfully chosen to serve our mission.</li>
+                        <li><strong>Excellent:</strong> We honor God by pursuing excellence in our craft.</li>
+                    </ul>
+                    
+                    <h2 class="meadow-title">The Meadow</h2>
+                    <p>Our connection to the land runs deep. Just beyond the neighborhood, our partner farm raises fluffy sheep and grows seasonal produce with care and intention.</p>
+                </div>
+            </div>
+        </section>
+         <!--Ai/gemini assited on making evrithing go indented (where they all should be align) in this hole form-->
+         <!--This is your Team Section. It’s the "Meet the Staff" area where you introduce the people who make the cafe special.-->
+         <section class="team-credits">
+            <h2>~ The Hands Behind the Table ~</h2>
+            <div class="team-banner-container">
+                <img src="images/workingTeam-img.webp" alt="Our Team" class="team-group-photo">
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/Jesus salute-img.webp" alt="Sarah" class="member-pic">
+                    <h3>Sarah Mitchell</h3>
+                    <p>Founder & Visionary</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/Jesus in king praise-img.webp" alt="Hendersons" class="member-pic">
+                    <h3>The Hendersons</h3>
+                    <p>Partner Farmers</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/cross-you are loved-img.webp" alt="Chef" class="member-pic">
+                    <h3>Chef David</h3>
+                    <p>Head of Culinary</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Shepherd's Table Cafe</h3>
+                <p>A Christian community hub where faith, food, and fellowship come together in perfect harmony.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <p>123 Meadow Lane<br>Green Valley, CA 94567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>(555) 123-4567<br>hello@shepherdstable.com</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 The Shepherd's Table Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
