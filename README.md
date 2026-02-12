@@ -1,6 +1,8 @@
 **# Shepherds-table-cafe_Website**
-Building my website  IMD-1005B Web Development - Winter term.Assignment #02é
+Building my website  IMD-1005B Web Development - Winter term.Assignment #02
+-------------------------------------------------------------------------------
 Carlton ID#101389155 / Algonquin ID:041244773
+
 -------------------------------------------------------------------------------
 **Client & Purpose**
 The Shepherd’s Table Cafe is a Christian community hub designed to blend faith, fellowship, and farm-fresh dining. The site serves as a digital "welcome mat" for the neighborhood, allowing visitors to:
