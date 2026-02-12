@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shepherd's Table Cafe | Reserve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="other/sheep.webp" alt="Cafe Logo" width="50">
+                <span class="site-title">Shepherd's Table CAFE</span>
+            </div>
+             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="SupprtingPage-code">About</a></li>
+                <li><a href="FormSection-code">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!--Ai/gemini assited on making evrithing go indented (where they all should be align) in this hole form-->
+    <main>
+        <section class="hero hero-reserve">
+            <div class="hero-overlay-content">
+                <h1>Reserve Your Seat</h1>
+                <p>Join us at the table for an unforgettable experience.</p>
+            </div>
+        </section>
+
+        <section class="reservation-form-container">
+            <h2>~ Secure Your Spot ~</h2>
+            <form class="reservation-form">
+            <!--This section is a Form Group. It is a set of digital "blank spaces" where your customers type in their information so they can talk to you or book a seat.-->
+
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+           <!--Ai/gemini assited on making evrithing go indented (where they all should be align) in this hole form-->
+          <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Shepherd's Table Cafe</h3>
+                <p>A Christian community hub where faith, food, and fellowship come together in perfect harmony.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <p>123 Meadow Lane<br>Green Valley, CA 94567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>(555) 123-4567<br>hello@shepherdstable.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>Saturday: 8am - 9pm<br>Sunday: 9am - 6pm</p>
+            </div>
+        </div>
+        <p class="footer-bottom"> 2026 The Shepherd's Table Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
