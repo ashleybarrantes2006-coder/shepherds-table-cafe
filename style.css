@@ -130,6 +130,9 @@ nav {
 }
 
 /* Mobile Styles (usually screens smaller than 768px) --> Ai healped to learn the mesurements and reminded me i have to add this condition before so it can show T-T */
+.menu-toggle {
+    display: none; /* This hides it on desktop */
+}  
 
 @media (max-width: 768px) {
     .menu-toggle {
