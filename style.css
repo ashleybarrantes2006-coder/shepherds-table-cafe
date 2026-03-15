@@ -135,16 +135,19 @@ nav {
 }  
 
 @media (max-width: 768px) {
+    
+    /* MOBILE NAV CONFIGURATION: --> summary from tutorials and Ai explaining the media and nav-liinks purpose piont form for me specialy
+   1. Hides the links by default (display: none).
+   2. Switches links to a vertical stack (column) for touch-friendly use.
+   3. Uses absolute positioning to 'float' the menu over the content without shifting the layout of the page.
+   
+   **VERY IMPORTANT = Menu toggle and nav links have to be closed together for that section wanted to work {}, 
+   but if not like what happpend to me (nav was oput of the media) the hole header section disappear due it being a new nav link, making it overide the otther one and disapear T-T --that fiked now it works when the frames gets smaller :)*
+   */
     .menu-toggle {
         display: flex;
         z-index: 10; /* Keeps the button on top */
     }
-
-    /* MOBILE NAV CONFIGURATION: --> summary from turtoas and Ai explaining the media and nav-liinks purpose piont form for me specialy
-   1. Hides the links by default (display: none).
-   2. Switches links to a vertical stack (column) for touch-friendly use.
-   3. Uses absolute positioning to 'float' the menu over the content without shifting the layout of the page.
-    */
     .nav-links {
         display: none; /* Keep it hidden until clicked */
         flex-direction: column;
@@ -157,6 +160,7 @@ nav {
         text-align: center;
         border-bottom: 3px solid #2b0c03;
     }
+}
 
 /* When we add the 'active' class via JS, show the menu */
     .nav-links.active {
