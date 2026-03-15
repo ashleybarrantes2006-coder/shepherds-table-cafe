@@ -24,7 +24,7 @@ I used AI as a collaborative coding partner during the development of this site 
   -Refining Language: AI helped translate technical coding concepts into simpler language to ensure my code was well-documented and easy to follow.
 
 --------------------------------------------------------------------------------
-New: Java Script Features Implemented: 
+**New: Java Script Features Implemented:**
   -Hamburger Menu: Added a toggle using classList so the nav links collapse into a menu on mobile.
   -Back to Top: Use a scroll event listener to show a button that smoothly scrolls back up.
   -Dynamic Content: Built the [menu/team] section using a JS array of objects and a loop to generate the HTML.
