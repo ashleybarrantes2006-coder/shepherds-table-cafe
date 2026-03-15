@@ -24,6 +24,14 @@ I used AI as a collaborative coding partner during the development of this site 
   -Refining Language: AI helped translate technical coding concepts into simpler language to ensure my code was well-documented and easy to follow.
 
 --------------------------------------------------------------------------------
-*Resources Used can be found in this Google document link: https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
+UPDATE- JAVA Script implementations:
+  -Hamburger Menu: Added a toggle using classList so the nav links collapse into a menu on mobile.
+  -Back to Top: Used a scroll event listener to show a button that smoothly scrolls back up.
+  -Dynamic Content: Built the [menu/team] section using a JS array of objects and a loop to generate the HTML.
+  -Accordion: Created a collapsible FAQ where clicking one header opens the info and closes the others.
+  -Fetch API: Used fetch to grab a live and display it on the page with a loading state.
+
+--------------------------------------------------------------------------------
+*Resources Used can be found in this Google document link and get insight about the website that its strongly suggested :D : https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
 
 --------------------------------------------------------------------------------
