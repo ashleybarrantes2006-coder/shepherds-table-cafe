@@ -24,12 +24,13 @@ I used AI as a collaborative coding partner during the development of this site 
   -Refining Language: AI helped translate technical coding concepts into simpler language to ensure my code was well-documented and easy to follow.
 
 --------------------------------------------------------------------------------
-UPDATE- JAVA Script implementations:
+New: Java Script Features Implemented: 
   -Hamburger Menu: Added a toggle using classList so the nav links collapse into a menu on mobile.
-  -Back to Top: Used a scroll event listener to show a button that smoothly scrolls back up.
+  -Back to Top: Use a scroll event listener to show a button that smoothly scrolls back up.
   -Dynamic Content: Built the [menu/team] section using a JS array of objects and a loop to generate the HTML.
   -Accordion: Created a collapsible FAQ where clicking one header opens the info and closes the others.
-  -Form Validation: Custom validation on the Reservation page to check for required field.
+  -Form Validation: Custom validation on the Reservation page to check for required fields.
+
 --------------------------------------------------------------------------------
 *Resources Used can be found in this Google document link and get insight about the website that its strongly suggested :D : https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
 
