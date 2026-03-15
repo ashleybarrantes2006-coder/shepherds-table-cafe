@@ -46,9 +46,12 @@
             <form class="reservation-form">
             <!--This section is a Form Group. It is a set of digital "blank spaces" where your customers type in their information so they can talk to you or book a seat.-->
 
+                <!--Update: Adding span and required lables to fill out and java script can "activate" => more on the sheep.Js -->
                 <div class="form-group">
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    <!--Span is invisible container. it’s empty, so it doesn't show up on your website. When your JavaScript detects an error (like a missing name), it "injects" text into that empty span. -->
+                    <span id="nameError" class="error-text"></span>
                 </div>
 
                 <div class="form-group">
@@ -70,7 +73,7 @@
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date" required>
                 </div>
-
+                <!--Ai helped here to correct my typos for the time section-->
                 <div class="form-group">
                     <label for="time">Time:</label>
                     <input type="time" id="time" name="time" required>
@@ -101,7 +104,13 @@
                 <p>Monday - Friday: 7am - 8pm<br>Saturday: 8am - 9pm<br>Sunday: 9am - 6pm</p>
             </div>
         </div>
-        <p class="footer-bottom"> 2026 The Shepherd's Table Cafe. All rights reserved.</p>
+        <p class="footer-bottom"> 2026 The Shepherd's Table Cafe. All rights reserved.</p> 
+
     </footer>
+    <!--Update: Adding a back up botton when scrolling down css and js attributes-->
+    <button id="backToTop" class="back-to-top">↑ Top</button>   
+
+    <!-- 3. External file — recommended approach (best!) -->
+    <script src="sheep.js"></script>
 </body>
 </html>

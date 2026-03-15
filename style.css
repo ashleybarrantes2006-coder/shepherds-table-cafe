@@ -272,6 +272,11 @@ nav {
     padding: 15px;
 }
 
+
+
+
+
+
 /* --- FOOTER --- WANTED  to make it look like a chocolate pudding feeling since its the end of the sweet spot */
 footer {
     background-color: #271105;
@@ -445,7 +450,13 @@ footer {
     margin-bottom: 15px;
 }
 
-
+/**/
+.error-text {
+    color: #d9534f; /* A soft red color */
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block; /* Ensures it sits on its own line */
+}
 /*---1. How the Circles Were Made- learned through Free code camp! (veryyy informative) checked the class slides and summarized it in gemini:
 
     "To turn a square photo into a perfect circle, we use the border-radius property set to 50%.
@@ -594,3 +605,46 @@ footer {
      Comparison of the Fix
      CSS RuleVisual Resultmargin-bottom: 50px; A 50-pixel white gap appears between your form and the footer.
      margin-bottom: 0;The bottom of your form touches the top of the footer perfec*/
+
+
+
+     
+
+
+     
+/*------UPDATE: BACK UP BOTTON OF JS ------*/
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    display: none; /* hidden to be by default*/
+    background-color: rgb(195, 0, 159); /*to make it pop*/
+    color:white; /*to make the arrow pop*/
+    border-radius: 7px;
+    cursor: pointer;
+    z-index: 1000 !important; 
+    /*Z-index meaning : stacking order for your elements. It controls which items sit "on top" of others along the Z-axis (the depth of your screen).
+    -index: 1000 for your Back to Top button or your Navigation Menu. You give them a high number to guarantee that nothing else—like a photo, a hero section, or a footer—accidentally covers them up.*/
+    
+    padding: 12px 24px;    /* Gives the button some "meat" */
+    border: none;          /* Removes default button borders */
+    font-size: 15px;       /* Makes the "Top" text readable */
+
+    /**/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+
+.back-to-top:hover {
+    background-color: #5a005a; /* Slightly darker purple on hover */
+}
+
+/* This class is added by JS when we scroll down */
+.back-to-top.show-btn {
+    display: block !important;
+/*In CSS, the !important rule is essentially a "super-override." When you have multiple rules fighting over the same element, the browser usually follows a hierarchy (specificity). By adding !important, you are telling the browser: "Ignore all other rules and hierarchy—this is the one that MUST be applied."*/
+}
+
+
