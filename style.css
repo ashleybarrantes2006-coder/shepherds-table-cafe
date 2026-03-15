@@ -111,6 +111,62 @@ nav {
     text-decoration: none;     /* Removes underline if you had one */
 }
 
+/*------Hambuger Section------*/
+
+/*Hiding the hambuger on Deskstop*/
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*bar lines menu style requirements*/
+.bar{
+    width:25px;
+    height: 3px;
+    background-color: rgb(241, 28, 4); /*--> how are they gonna apopear in a smaller screen (bright red)*/
+    transition:0.3s;
+}
+
+/* Mobile Styles (usually screens smaller than 768px) --> Ai healped to learn the mesurements and reminded me i have to add this condition before so it can show T-T */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        z-index: 10; /* Keeps the button on top */
+    }
+
+    /* MOBILE NAV CONFIGURATION: --> summary from turtoas and Ai explaining the media and nav-liinks purpose piont form for me specialy
+   1. Hides the links by default (display: none).
+   2. Switches links to a vertical stack (column) for touch-friendly use.
+   3. Uses absolute positioning to 'float' the menu over the content without shifting the layout of the page.
+    */
+    .nav-links {
+        display: none; /* Keep it hidden until clicked */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px; /* Adjust based header height */
+        left: 0;
+        background-color: #f5e8d1; /* Matches header color */
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 3px solid #2b0c03;
+    }
+
+/* When we add the 'active' class via JS, show the menu */
+    .nav-links.active {
+        display: flex;
+    }
+/*By default, the menu is hidden (display: none). This rule says: "If the menu has the extra name 'active' attached to it, show it immediately." When you click the hamburger, your JavaScript will quickly add the word "active" to your HTML, and this CSS rule will make the menu pop out.*/
+
+
+
+
+
+
+
 /* --- HERO SECTION --- */
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/fam gatherd.webp');
