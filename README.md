@@ -32,6 +32,6 @@ I used AI as a collaborative coding partner during the development of this site 
   -Form Validation: Custom validation on the Reservation page to check for required fields.
 
 --------------------------------------------------------------------------------
-*Resources Used can be found in this Google document link and get insight about the website that its strongly suggested :D : https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
+*Resources Used can be found in this Google document link and some insight about the website :D : https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
 
 --------------------------------------------------------------------------------
