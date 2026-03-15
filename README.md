@@ -1,5 +1,5 @@
 **# Shepherds-table-cafe_Website**
-Building my website  IMD-1005B Web Development - Winter term.Assignment #02
+Building my website  IMD-1005B Web Development - Winter term.Assignment #1 & #2-3
 -------------------------------------------------------------------------------
 Carlton ID# 101389155 / Algonquin ID# 041244773
 
