@@ -111,7 +111,18 @@ nav {
     text-decoration: none;     /* Removes underline if you had one */
 }
 
-/*------Hambuger Section------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------HAMBUGER SECTION------*/
 
 /*Hiding the hambuger on Deskstop*/
 .menu-toggle {
@@ -121,13 +132,30 @@ nav {
     gap: 5px;
 }
 
-/*bar lines menu style requirements*/
+/*individuals bar lines menu style requirements*/
 .bar{
-    width:25px;
-    height: 3px;
-    background-color: rgb(241, 28, 4); /*--> how are they gonna apopear in a smaller screen (bright red)*/
-    transition:0.3s;
+    width: 35px;
+    height: 7px;
+    background-color: rgb(255, 25, 0); /*--> how are they gonna apopear in a smaller screen (bright red)*/
+    transition:0.3s ease-in-out; /* Smoothly moves the bars into an X */
+    border-radius: 5px;
 }
+
+/* --- THE "X" ANIMATION LOGIC --- */
+
+/* 1. Top bar: Rotate 45 degrees and move down */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+/* 2. Middle bar: Fade out completely */
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+/* 3. Bottom bar: Rotate -45 degrees and move up */
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);}
 
 /* Mobile Styles (usually screens smaller than 768px) --> Ai healped to learn the mesurements and reminded me i have to add this condition before so it can show T-T */
 .menu-toggle {
@@ -162,11 +190,26 @@ nav {
     }
 }
 
+/* When menu-toggle is clicked, JavaScript adds 'active' to .nav-links transition --> credit to do transition for tutorial: animated hambuger by codeStackr */
+    .nav-links.active {
+        display: flex;
+        /* Optional: Add a fade-in animation */
+        animation: fadeIn 0.3s ease;}
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
 /* When we add the 'active' class via JS, show the menu */
     .nav-links.active {
         display: flex;
     }
 /*By default, the menu is hidden (display: none). This rule says: "If the menu has the extra name 'active' attached to it, show it immediately." When you click the hamburger, your JavaScript will quickly add the word "active" to your HTML, and this CSS rule will make the menu pop out.*/
+
+
+
+
+
 
 
 
@@ -277,7 +320,107 @@ nav {
 
 
 
+
+
+
+
+
+/*----------Collaposible Accordion Set up -------*/
+
+/*Credit for tutorial of the "Check box/Radio Hack": Great Stack
+
+the "Checkbox/Radio Hack" (where the :checked state of a hidden input toggles the visibility of the next element),is technaclly a pure CSS accordion.
+It’s a very clever and efficient way to handle it for a web development assignment! */
+
+.accordion .content{
+    color: rgb(48, 0, 0);
+    padding: 0 20px; /* Base horizontal padding */
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff5a; /* Makes the inside slightly lighter/different from the label */
+    border-radius: 7px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+    padding:10px;
+    border-radius: 7px;
+    background-color: rgba(228, 195, 163, 0.688);
+    /* Offset-X, Offset-Y, Blur, Color */
+    box-shadow: 4px 4px 10px rgba(172, 119, 101, 0.584), -4px -4px 10px rgba(255, 250, 181, 0.99); /*the first rgba is the shadow on the right and botton, the second one is the "light capture shadow" the up and left*/
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding:10px; /*In web design, padding refers to the space between an element's content and its border. */
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+
+}
+
+/*Ai helped me fix my mistake of dealeating the light shadow from accordion li to stop glowing yet keeping them in the list format!*/
+/* This targets the actual bullet points inside the content */
+.guide-list {
+    list-style-type: disc; /* Gives you actual bullet points */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 40px; /* Ai healped to have a more accurate INCREASED- 
+    learned thrpough another tuto tahat makes the words/bullets toward the center */
+}
+
+.guide-list li {
+    background: none; /* Ensures the list items don't have their own boxes */
+    box-shadow: none;  /* Removes any inherited shadows from the parent li *;*/
+}
+
+label::before{
+    content: "+";
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*removes the point cicle when hoverd/ touched*/
+input[type="radio"]{
+    display:none
+}
+
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+
+}
+
+.accordion input[type="radio"]:checked + label::before{
+    content: "=";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- FOOTER --- WANTED  to make it look like a chocolate pudding feeling since its the end of the sweet spot */
+
 footer {
     background-color: #271105;
     padding: 60px 5%;
@@ -323,6 +466,11 @@ footer {
 
 
 
+
+
+
+
+
     
     
 /*-------------supporting pages css*--------/
@@ -350,13 +498,10 @@ footer {
     align-items: center;
 }
 
-
-/*-------Supportng pages----*/
 /* --- ABOUT HERO SECTION --- notes details below*/
 .about-hero {
     /* Same centering and overlay as homepage */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                      url('images/reading the bible-img.webp');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/reading the bible-img.webp');
     background-size: cover;
     background-position: center;
     height: 60vh; 
@@ -389,6 +534,13 @@ footer {
     border-left: 4px solid #e4c186;
     padding-left: 20px;
 }
+
+
+
+
+
+
+
 
 /* --- GUIDES SECTION (FLEXBOX) --- */
 /*This CSS is what creates that high-end, professional "magazine look" for What Guides Us section. It’s all about balance and alignmen*/
@@ -449,14 +601,15 @@ footer {
     border: 4px solid #e4c186;
     margin-bottom: 15px;
 }
-
-/**/
 .error-text {
     color: #d9534f; /* A soft red color */
     font-size: 0.85rem;
     margin-top: 4px;
     display: block; /* Ensures it sits on its own line */
 }
+
+
+
 /*---1. How the Circles Were Made- learned through Free code camp! (veryyy informative) checked the class slides and summarized it in gemini:
 
     "To turn a square photo into a perfect circle, we use the border-radius property set to 50%.
@@ -507,12 +660,7 @@ footer {
 
 
 
-
-
-
 /*---------Form section css-------*/
-
-
 
 /* --- RESERVATION FORM STYLING --- Gemini helped me learn that can easily add abackground behind the form, heped me align the flex box  layaout of the form and relearn how to add shadow and lines roundness while making this TvT*/
 
@@ -613,6 +761,11 @@ footer {
      Comparison of the Fix
      CSS RuleVisual Resultmargin-bottom: 50px; A 50-pixel white gap appears between your form and the footer.
      margin-bottom: 0;The bottom of your form touches the top of the footer perfec*/
+
+
+
+
+
 
 
 

@@ -78,13 +78,68 @@ document.addEventListener('DOMContentLoaded', function(){//----1# HAMBUGER SECTI
     }
 
 
-    //-----------Dynamic Content Rendering-----//
+    //-----------Dynamic Content Rendering---------//
 
+    // credits to: Bro code, Java Script info page, coding2GO, Mdn_Dom doc load event that told me as well to add it on top for all of this so the hole doc should be added TvT...//
 
+    // what the purpose of thgis section = Dynamic Content Rendering is a fancy way of saying: "Updating the website's content on the fly without making the user refresh the page."
+    
+    //Aka: static content: rendering things att build time = means like in an analogy from goolechrome search : the "food" is prepared, packaged, and put on a shelf before the customer even walks in.
+        //How it works: You write the HTML and CSS, save the file, and upload it.
+        //The Result: Every person who visits sees the exact same thing. It never changes unless you (the developer) go back into the code, change it, and "re-build" (re-upload) the site.
+    
+    //Dynamic = rendering things on request time = meaning  in same analogy: the "food" is cooked only after the customer places an order.
+        //how it works: The browser (or server) waits for the user to do something—like click a button, type a name, or log in. Only then does the code "generate" the HTML.
+        //he Result: The page is unique to that specific moment or user.
+
+    //Rendering" basically means "drawing on the screen." When your JS changes the size, the browser has to "re-draw" (re-render) that image at the new scale.
+
+    //Ai helped me look for the meanning of each sect so i can understand what they actually do and if they really have to be there..:)//
+    // 1. Grab the elements from the DOM
+    const radioFirst = document.getElementById('first');
+    const radioSecond = document.getElementById('second');
+    const guideImg = document.querySelector('.guide-image img');
+
+    // 2. Add the Event Listeners (The triggers)
+    if (radioFirst && radioSecond && guideImg) {
+        radioFirst.addEventListener('change', updateImageEffect);
+        radioSecond.addEventListener('change', updateImageEffect);
+    }
+    function updateImageEffect() {
+    if (radioFirst.checked) {
+        guideImg.style.transform = "scale(1.15)";
+        // DYNAMIC CONTENT: Swap the image source
+        guideImg.src = "images/sheep and lambs-img.webp"; 
+    } else if (radioSecond.checked) {
+        guideImg.style.transform = "scale(1.05) rotate(2deg)";
+        // DYNAMIC CONTENT: Swap image for the "Meadow" section
+        guideImg.src = "images/green-Olives-medow.webp"; 
+    }}
 
 
 
     //----------- Accordion or T abbed Content -----//
+
+    // This allows a user to uncheck a radio button by clicking it again
+    //Ai assisted on helping me with the => js since before I was mixing the brakets type...
+    
+    //------what does this do-close again if the user touches it back again-----//
+    document.querySelectorAll('.accordion input[type="radio"]').forEach((radio) => {
+        radio.addEventListener('click', (e) => {
+            if (radio.dataset.wasChecked === 'true') {
+                radio.checked = false;
+                radio.dataset.wasChecked = 'false';
+            } else {
+                // Reset others
+                document.querySelectorAll('.accordion input[type="radio"]').forEach(r => r.dataset.wasChecked = 'false');
+                radio.dataset.wasChecked = 'true';
+            }
+        });
+    });
+
+
+
+    
 
 });   // <--- This closes the DOMContentLoaded "Wait!" command
 
