@@ -281,7 +281,7 @@ nav {
 footer {
     background-color: #271105;
     padding: 60px 5%;
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: center;
     /* FIXED: This makes the footer text clear on the dark background */
     color: #e4c186; 
@@ -523,15 +523,23 @@ footer {
     background-position: center;
 }
 .reservation-form-container {
-    padding: 60px;
+    padding: 80px;
     min-height: 100vh; /* Ensures the background fills the screen height */
     margin-bottom: 0;
     
     
-    /* ADDing THE IMAGE background HERE-making it be part of the websection */
+    /* image form background settings elemets*/
     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 237, 0.4)), url('Other/light-Background.webp');
-    background-size: cover;
     background-position: center;
+
+    /* The first value is width (keep it 'cover' or '100%') */
+    /* The second value is height—increase this % to make it longer */
+    background-size: cover; 
+    /* Starts the image at the top so it doesn't cut off the 'head' of the photo */
+    background-position: center top;
+    /* Ensure it doesn't repeat if it gets too long */
+    background-repeat: no-repeat;
+    
 
     display: flex;
     flex-direction: column;
@@ -648,3 +656,6 @@ footer {
 }
 
 
+/* Notes: 
+margin-top: 0; kills the "white gap" that exists between two different sections.
+background-size: cover; kills the "white gap" that exists inside a section where the image wasn't tall enough to reach the bottom.*/
