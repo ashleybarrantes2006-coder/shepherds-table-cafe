@@ -1,5 +1,7 @@
-**# Shepherds-table-cafe_Website**
+**Shepherds-table-cafe_Website**
+-------------------------------------------------------------------------------
 Building my website  IMD-1005B Web Development - Winter term.Assignment #1 & #2-3
+
 -------------------------------------------------------------------------------
 Carlton ID# 101389155 / Algonquin ID# 041244773
 
@@ -32,6 +34,6 @@ I used AI as a collaborative coding partner during the development of this site 
   -Form Validation: Custom validation on the Reservation page to check for required fields.
 
 --------------------------------------------------------------------------------
-*Resources Used can be found in this Google document link and some insight about the website :D : https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
+*Resources (images and fonts) Used can be found in this Google document + some insight about the website :D : https://docs.google.com/document/d/1GGSlnN0k38tuGXj4LXN6qyRIveHGNpv9UBg0O-1KAks/edit?usp=sharing*
 
 --------------------------------------------------------------------------------
